@@ -31,17 +31,34 @@ hangman_steps = {0: ("   ",
 #print(hangman_steps[0])
 
 def display_hangman(tries):
-    pass
+    print("####################")
+    
+    for line in hangman_steps[tries]:
+        print(line)
+    print("####################")
 
 def display_hint(hint):
-    pass
+    print
 
 def display_answer(answer):
     pass
 
 
 def main():
-    pass
+    answer= random.choice(words)
+    hint = ["_"]*len(answer)
+    tries = 6
+    guessed_letters = set()
+    is_runnning = True
+    
+    while is_runnning:
+        print("\n")
+        display_hangman(tries)
+        display_hint(hint)
+        display_answer(answer)
+        guess = input("Simon says Guess a letter: ").lower()
+    
+    
 
 if __name__ == "__main__":
     main()
