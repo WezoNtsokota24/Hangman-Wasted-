@@ -30,6 +30,22 @@ hangman_steps = {0: ("   ",
 
 #print(hangman_steps[0])
 
+def display_hangman(tries):
+    pass
+
+def display_hint(hint):
+    pass
+
+def display_answer(answer):
+    pass
+
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+
 
 
 
